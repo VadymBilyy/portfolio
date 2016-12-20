@@ -1,0 +1,170 @@
+@font-face {
+  font-family: LeagueGothic;
+  src: url("../fonts/league gothic/LeagueGothic-Regular.otf") format("opentype");
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.header {
+  height: 845px;
+  background-image: url("../img/bg total.png");
+  background-size: cover;
+  font-family: LeagueGothic, sans-serif;
+}
+.header .head-layout-black {
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: -420px;
+}
+.header img.logo {
+  top: -30px;
+  position: relative;
+}
+.header .nav-header {
+  background-color: transparent;
+  border: none;
+  margin-top: 60px;
+  margin-bottom: 130px;
+}
+.header .nav-header li a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  padding: 6px 15px;
+  margin: auto 10px;
+}
+.header .nav-header li a:hover {
+  color: #fff;
+  border-bottom: 2px solid #edbfff;
+}
+.header .item .slider-inner-left {
+  position: relative;
+  top: 80px;
+}
+.header .item .slider-inner-left h2 {
+  font-size: 60px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.header .item .slider-inner-left h4 {
+  font-size: 32px;
+  color: #edbfff;
+  text-transform: uppercase;
+}
+.header .item .slider-inner-left p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 100px;
+}
+.header .item .slider-inner-right {
+  padding-left: 70px;
+}
+.header .item .slider-inner-right .phone-focus {
+  margin-left: -45px;
+}
+.header .item .slider-inner-right .play-icon {
+  position: absolute;
+  top: 150px;
+  right: 110px;
+}
+.header .carousel .control-left {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 39%;
+  left: -12%;
+}
+.header .carousel .control-right {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 39%;
+  right: -12%;
+}
+.header .carousel .head-carousel-indicators {
+  text-align: right;
+  padding-right: 40px;
+  margin-top: 115px;
+  top: 80%;
+}
+.main-content .about-company {
+  padding: 70px 0;
+  color: #fff;
+  background: -webkit-linear-gradient(top, #745083 0%, #322539 100%);
+  border-top: 1px solid #33253a;
+}
+.main-content .about-company .img-block {
+  float: left;
+  width: 14.7%;
+}
+.main-content .about-company .text-block {
+  float: left;
+  width: 80%;
+}
+.main-content .about-company .text-block h3 {
+  font-family: "LeagueGothic";
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.main-content .about-company .text-block p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+.main-content .about-company .text-block a.read-more {
+  color: #fff;
+  font-size: 18px;
+  font-family: "LeagueGothic";
+  text-transform: uppercase;
+  float: right;
+}
+.main-content .about-company .text-block a.read-more:hover {
+  text-shadow: 0 0 15px #fff;
+  text-decoration: none;
+}
+.main-content .updates {
+  background-color: #f9f9f9;
+  padding: 110px 0;
+}
+.main-content .updates .updates-left-slider {
+  background: url("../img/Layer quote.png") no-repeat center;
+  padding: 70px 0;
+}
+.main-content .updates .updates-left-slider .carousel-indicators {
+  bottom: -80px;
+}
+.main-content .updates .updates-left-slider .carousel-indicators li {
+  background-color: #5a5a5a;
+  width: 19px;
+  height: 19px;
+}
+.main-content .updates .updates-left-slider .carousel-indicators li.active {
+  background-color: #fff;
+  border: 3px solid #5a5a5a;
+}
+.main-content .updates .item .img-block {
+  width: 14.7%;
+  float: left;
+}
+.main-content .updates .item .text-block {
+  width: 80%;
+  float: left;
+}
+.main-content .updates .item .text-block h3 {
+  font-size: 30px;
+  font-family: "LeagueGothic";
+  text-transform: uppercase;
+}
+.main-content .updates .item .text-block h3 span {
+  color: #edbfff;
+}
+.main-content .updates .item .text-block p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+@media screen and (min-width: 990px) {
+  .container {
+    width: 965px;
+  }
+}

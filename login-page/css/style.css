@@ -1,0 +1,214 @@
+@font-face {
+      font-family: "Helvetica";
+      src: url("../fonts/HelveticaNeueLight.ttf");
+    }
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family:Tahoma, sans-seif;
+	font-size: 14px;
+}
+#wrapper {
+	height: 1065px;
+	width: 100%;
+	max-width: 1215px;
+	margin: 0 auto;
+}
+/*-------------------HEADER----------------------*/
+.header-menu {
+	background-color: #075190;
+	height: 35px;
+	position: relative;
+}
+	.header-menu .header-menu-ul{
+		position: absolute;
+		right: 0;
+		top:0;
+		padding: 0 20px;
+		height: 35px;
+		list-style-type: none;
+		margin:0;
+	}
+		.header-menu .header-menu-ul li {
+			float: left;
+		}
+			.header-menu .header-menu-ul li a.a-menu {
+				display: block;
+				color: #57aae2;
+				padding: 10px 15px;
+				max-height: 35px;
+				box-sizing:border-box;
+				text-decoration: none;
+			}
+			.header-menu .header-menu-ul li a:hover {
+				color: #fff;
+				background-color: #4eabda;
+			}
+
+			.header-menu .header-menu-ul li a.ajuda {
+				border-right: 1px solid #56a2dc;
+			}
+			.header-menu .header-menu-ul li a.a-login {
+				line-height: 35px;
+				padding: 9px 0;
+			}
+				.header-menu .header-menu-ul li a.a-login:hover {
+					background-color: #388ACB;
+				} 
+			.header-menu .header-menu-ul li a.a-flag {
+				display: block;
+				color:#fff;
+			}
+			.header-menu .header-menu-ul li i.my-flag {
+				margin-right: 10px;
+			}
+			.header-menu .header-menu-ul li:last-child {
+				background-color: #388acb;
+				padding: 0px 12px;
+				border-left: 1px solid #5ea5e1;
+				border-right: 1px solid #5ea5e1;
+			}
+			.header-menu .header-menu-ul li:last-child,  .header-menu .header-menu-ul li:last-child a{
+				color:#fff;
+			}
+/*---------------MAIN--------------------------*/
+.main {
+	background-image: url("../img/fon.png");
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+}
+	.main .center-block {
+		width: 46%;
+		height: 68%;
+		box-sizing:border-box;
+		position: absolute;
+		left: 27%;
+		top: 17.5%;
+		background-color: rgba(0,0,0, .7);
+	}
+		.main .center-block .center-block-header h1 {
+			color: #fff;
+			font-size: 24px;
+			text-align: center;
+			border-bottom: 2px solid #c1c4b9;
+			margin: 0;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+			.main .center-block .center-block-main .wrapper-in {
+				width: 50%;
+				margin: 0 auto;
+				color: #fff;
+			}
+				.main .center-block .center-block-main .wrapper-in .login-facebook {
+					color: #fff;
+					background-color: #2f447b;
+					border: none;
+					border-radius: 3px;
+					margin-top: 30px;
+					width: 111%;
+				}
+				.main .center-block .center-block-main .wrapper-in .login-facebook .fa-facebook {
+					padding: 11px 15px;
+					border-right: 1px solid #4d65a3;
+				}
+				.main .center-block .center-block-main .wrapper-in .login-facebook .fa-chevron-right {
+					padding: 11px 20px
+				}
+				.main .center-block .center-block-main .wrapper-in .login-facebook .log-main {
+					padding-left: 30px;
+				}
+				.main .center-block .center-block-main .wrapper-in p{
+					text-align: center;
+					width: 145%;
+    				margin-left: -20%;
+    				color: #a7a7a7;
+    				margin-top: 20px;
+			}
+				.main .center-block .center-block-main .wrapper-in .ou {
+					width: 111%;
+					text-align: center;
+					color: #686b67;
+					font-size: 14px;
+					padding: 25px 0px;
+					background: url("../img/bckg_ou.png") no-repeat 0 50%, url("../img/bckg_ou.png") no-repeat 100% 50%;
+				}
+
+			.main .center-block .center-block-main .wrapper-in .input {
+				width: 100%;
+				height: 35px;
+				margin-bottom: 20px;
+				background-color: #000;
+				border:none;
+				border-bottom: 1px solid #484848;
+				color: #fff;
+				padding: 10px 15px;
+				font-size: 14px;
+			}
+			input::-webkit-input-placeholder {
+   				color: #ccc;
+   				font-size: 14px;
+			}
+				.main .center-block .center-block-main .wrapper-in .input:focus {
+					background-color: #1b5288;
+					color: #fff;
+					box-shadow: 0 0 10px #4985ac;
+
+				}
+			.send-form {
+				background-color: #2e7ac4;
+				color: #fff;
+				padding: 10px;
+				border: none;
+				margin: 0 auto;
+				width: 50%;
+				margin-left: 31%;
+    			margin-top: 20px;
+    			border-radius: 3px;
+			}
+			input + label {
+				color: #a7a7a7;
+			}
+/*------------MEDIA--------------------*/
+
+@media screen and (max-width: 1172px){
+		.main .center-block{
+			height: 70%;
+		}
+		.send-form {
+			width: 60%;
+		}
+		.main .center-block .center-block-main .wrapper-in .login-facebook i {
+			padding: 11px 3px;
+			margin-left: -7px;
+		}
+}
+@media screen and (max-width: 990px){
+	.main .center-block .center-block-main .wrapper-in .login-facebook i {
+		display:none;
+	}
+	.main .center-block .center-block-main .wrapper-in .login-facebook {
+		padding: 10px 0;
+	}
+	.main .center-block .center-block-main .wrapper-in .login-facebook .log-main{
+		padding: 0;
+	}
+	.main .center-block{
+			height: 75%;
+		}
+	.send-form {
+			width: 65%;
+			margin-left: 24%;
+		}
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("a.tab").click(function () {
+		$(".now").removeClass("now");
+		$(this).addClass("now");
+		$(".about-us-in").slideUp();
+		 
+		var content_show = $(this).attr("title");
+		$("#"+content_show).slideDown();
+		
+		return false;
+	 });
+});
+</script>
+<script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+<!--<script type="text/javascript">
+	$(function(){
+		$.pixlayout1({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
+}); 
+</script>-->
+</head>
+
+<body>
+<div class="karkas">
+	<div class="menu-main">
+        <div class="menu">	
+            <ul>
+                <span>Jump to:</span>
+                <li><a href="#chapter-1" class="active">home</a></li>
+                <li><a href="#chapter-2">about us</a></li>
+                <li><a href="#chapter-3">portfolio</a></li>
+                <li><a href="#chapter-4">contact</a></li>
+            </ul>
+        </div>
+    </div>    
+    <div class="home section" id="chapter-1">
+    	<img src="images/logo.png" class="logo" alt="" />
+        <img src="images/raketa.png" class="raketa" alt="" />
+        <div class="clr"></div>
+        <div class="welcome">
+            <h1>welcome</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in porttitor metus. Quisque quis nunc vel odio porttitor faucibus. Morbi at risus eu augue egestas dignissim ac a leo. In et ligula lacus. Quisque cursus risus eu felis commodo volutpat congue justo accumsan. Phasellus cursus dolor vel est volutpat sit amet viverra justo venenatis. Duis vel tempor diam. Nullam quis nunc ac felis blandit hendrerit et quis elit. Nunc scelerisque turpis vel metus dapibus ut rhoncus urna aliquam. Duis lacinia tincidunt vestibulum. Pellentesque pellentesque semper nulla vitae placerat. Morbi lobortis, nibh ac auctor venenatis, augue erat condimentum dolor, sed volutpat magna lacus ac justo. Aenean ut blandit tortor. Nunc venenatis tincidunt sapien, at lobortis leo sagittis vitae. Praesent quam nunc, posuere ac pharetra ac, adipiscing ut ipsum. Cras commodo rutrum lorem at pellentesque. Praesent vel dui dignissim lorem semper adipiscing. 
+    </p>
+    		<p>condimentum egestas. Donec vitae quam mi. Nulla non magna elit. Vivamus ac orci sit amet est malesuada vehicula. Mauris quis nunc risus. Morbi non ullamcorper augue.</p> 
+        </div>
+        
+        <div class="network">
+            <h2>network</h2>
+            <p><a href="#"><img src="images/rss.png" alt="" /></a> 1500</p>
+            <p><a href="#"><img src="images/facebook.png" alt="" /></a> 1500</p>
+            <p><a href="#"><img src="images/twitter.png" alt="" /></a> 1500</p>
+        </div>        
+    </div>
+    
+    <div class="about-main section"  id="chapter-2">
+    	<div class="about">
+            <div class="baloon-big">
+                <img src="images/balloon1.png" alt="" />
+            </div>
+            <div class="baloon-small">
+                <img src="images/balloon2.png" alt="" />
+            </div>
+            <div class="about-us">
+            	<h1>about us</h1>
+            	<div class="about-us-in" id="about-us_1">
+                	<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in porttitor metus. Quisque quis nunc vel odio porttitor faucibus. Morbi at risus eu augue egestas dignissim ac a leo. In et ligula lacus. Quisque cursus risus eu felis commodo volutpat congue justo accumsan.</strong> Phasellus cursus dolor vel est volutpat sit amet viverra justo venenatis. Duis vel tempor diam. Nullam quis nunc ac felis blandit hendrerit et quis elit. Nunc scelerisque turpis vel metus dapibus ut rhoncus urna aliquam. Duis lacinia tincidunt vestibulum. Pellentesque pellentesque semper nulla vitae placerat. Morbi lobortis, nibh ac auctor venenatis, augue erat condimentum dolor, sed volutpat magna lacus ac justo. Aenean ut blandit tortor. Nunc venenatis tincidunt sapien, at lobortis leo sagittis vitae. Praesent quam nunc, posuere ac pharetra ac, adipiscing ut ipsum. Cras commodo rutrum lorem at pellentesque. Praesent vel dui dignissim lorem semper adipiscing.</p> 
+                </div>  
+                <div class="about-us-in" id="about-us_2">
+                	<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in porttitor metus. Quisque quis nunc vel odio porttitor faucibus. Morbi at risus eu augue egestas dignissim ac a leo. In et ligula lacus. Quisque cursus risus eu felis commodo volutpat congue justo accumsan.</strong> Phasellus cursus dolor vel est volutpat sit amet viverra justo venenatis. Duis vel tempor diam. <strong>Nullam quis nunc ac felis blandit hendrerit et quis elit. Nunc scelerisque turpis vel metus dapibus ut rhoncus urna aliquam</strong>. Duis lacinia tincidunt vestibulum. Pellentesque pellentesque semper nulla vitae placerat. Morbi lobortis, nibh ac auctor venenatis, augue erat condimentum dolor, sed volutpat magna lacus ac justo. Aenean ut blandit tortor. Nunc venenatis tincidunt sapien, at lobortis leo sagittis vitae. Praesent quam nunc, posuere ac pharetra ac, adipiscing ut ipsum. Cras commodo rutrum lorem at pellentesque. Praesent vel dui dignissim lorem semper adipiscing.</p> 
+                </div>
+                <div class="about-us-in" id="about-us_3">
+                	<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in porttitor metus. Quisque quis nunc vel odio porttitor faucibus. Morbi at risus eu augue egestas dignissim ac a leo. In et ligula lacus. Quisque cursus risus eu felis commodo volutpat congue justo accumsan.</strong> Phasellus cursus dolor vel est volutpat sit amet viverra justo venenatis. Duis vel tempor diam. <strong>Nullam quis nunc ac felis blandit hendrerit et quis elit. Nunc scelerisque turpis vel metus dapibus ut rhoncus</strong> urna aliquam. Duis lacinia tincidunt vestibulum. Pellentesque pellentesque semper nulla vitae placerat. Morbi lobortis, nibh ac auctor venenatis, augue erat condimentum dolor, sed volutpat magna lacus ac justo. Aenean ut blandit tortor. Nunc venenatis tincidunt sapien, a<strong>t lobortis leo sagittis vitae. Praes</strong>ent quam nunc, posuere ac pharetra ac, adipiscing ut ipsum. Cras commodo rutrum lorem at pellentesque. Praesent vel dui dignissim lorem semper adipiscing.</p> 
+                </div>             
+        	</div>
+            <ul class="tabs">
+                <li><a href="#" title="about-us_1" class="tab now">Who are we?</a></li>
+                <li><a href="#" title="about-us_2" class="tab">What do we do?</a></li>
+                <li><a href="#" title="about-us_3" class="tab">Our Mission</a></li>
+            </ul>
+        </div>
+    </div> 
+    
+    <div class="portfolio-main section"  id="chapter-3">
+    	<div class="portfolio-main-in">
+        	<div class="portfolio">
+            	<h1>portfolio</h1>
+                <p><img src="images/portfolio-img.png" alt="" /></p>
+            </div>
+            <div class="findua">
+            	Find us at &nbsp; <img src="images/flickr.png" alt="" /> <img src="images/linked.png" alt="" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-main section"  id="chapter-4">
+    	<div class="contact-treeleft">
+        </div>
+        <div class="contact-treeright">
+        </div>
+        
+        <div class="contact">
+           	<h1>Contact us</h1>
+            	<div class="contact-form">
+                    <form action="" method="get">
+                     <div class="input-main">
+                        <div>
+                            <input type="text" name="first_name" />
+                        </div>
+                        <p>Your name</p>
+                     </div>
+                     <div class="input-main">
+                        <div>
+                            <input type="text" name="mail_addres" />
+                        </div>
+                        <p>Your email address</p>
+                     </div>
+                     <div class="txtarea">
+                        <div>
+                            <textarea></textarea>
+                        </div>    
+                        <p>Your Question / Comment</p>
+                        <input type="image" src="images/button.png" name="ok" />
+                     </div>
+                     </form>
+                </div>     
+        </div>
+         <p class="ftr">Or you can give us a call: <span>+1 800 555 5555</span></p>
+    </div>
+       
+</div>
+<script src="js/jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
+<script src="js/waypoints.min.js" type="text/javascript"></script>
+<script src="js/navbar2.js" type="text/javascript"></script>
+</body>
+</html>

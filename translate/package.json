@@ -1,0 +1,22 @@
+{
+  "name": "mom-site",
+  "version": "1.0.0",
+  "description": "template 56033 temp-monst",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadymbilyy/Practice.git"
+  },
+  "keywords": [
+    "template"
+  ],
+  "author": "Vadym Bilyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vadymbilyy/Practice/issues"
+  },
+  "homepage": "https://github.com/vadymbilyy/Practice#readme"
+}

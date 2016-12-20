@@ -1,0 +1,23 @@
+//main: style.less
+
+.text-center { text-align: center; }
+.text-red { color: @theme_color1; }
+.pull-left { float: left; }
+.pull-right { float: right; }
+.text-upper { text-transform: uppercase; }
+.text-small { font-size: @small; }
+.hidden { display: none; }
+.rel { position: relative; }
+
+.link {
+    color: @white;
+    text-decoration: underline;
+
+    &_red {
+        color: @theme_color1;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
