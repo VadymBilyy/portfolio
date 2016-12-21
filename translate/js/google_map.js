@@ -6,7 +6,7 @@ function init() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+        zoom: 9,
         zoomControl: false,
         scrollwheel: false,
         scaleControl: false,
@@ -19,7 +19,7 @@ function init() {
         mapTypeControl: false,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(56.9472814, 24.1087857), // New York
+        center: new google.maps.LatLng(41.0138169, -8.6836518), // New York
 
         // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
@@ -36,9 +36,9 @@ function init() {
 
     var neighborhoods = [
         // Main
-        {lat: 56.9472687, lng: 24.108269, title: 'Title 1', content: 'Text text text', icon: 'map-pin.png'},
-        {lat: 56.9473097, lng: 24.1101143, title: 'Title 2', content: 'Text text text2', icon: 'map-pin.png'},
-        {lat: 56.9472896, lng: 24.110705, title: 'Title 3', content: 'Text text text3', icon: 'map-pin.png'},
+        {lat: 41.1503744, lng: -8.6083614, title: 'Agente no Porto', content: 'Entrega e traduções de documentos no Porto', icon: 'map-pin.png'},
+        {lat: 41.0979264, lng: -8.6058038, title: 'Agente na Vila Noa de Gaia', content: 'Receção dos documentos em Vila Nova de Gaia', icon: 'map-pin.png'},
+        {lat: 40.6161771, lng: -8.6247532, title: 'Sede central de Aveiro', content: 'Todo o tipo de traduçoes e interprete em Aveiro', icon: 'map-pin.png'},
     ];
 
     /* Info windows

@@ -12,36 +12,14 @@
           loop: true,
           contentType: 'html',
           showCursor: true,
-          cursorChar: "|"
+          cursorChar: "|",
         });
 
 
       /*-----adding img in document list------------------*/
         var icon = $("<i class='fa fa-arrow-circle-right' aria-hidden='true'></i>");
         $(".documents li").prepend(icon);
-
-      /*-------------google-map---------------------------*/
-        (function(){
-          var map;
-          
-          function initMap() {
-            var myLatLng = {lat: 40.6161771, lng: -8.6247532};
-            map = new google.maps.Map(document.getElementById('map'), {
-              center: myLatLng,
-              zoom: 12,
-              scrollwheel: false,
-            });
-
-            var marker = new google.maps.Marker({
-              position: myLatLng,
-              map: map,
-              title: 'Translate center\nJunta de freguesia de sao bernardo'
-            });
-          }
-          
-          initMap();
-
-        })();
+       
     /*---------------------Links rediretion---------------------------*/
     $(".navbar-right li a").on("click", function(e){
       e.preventDefault();
@@ -52,9 +30,41 @@
       }, 500);
     });
 
+  /*----------------form-validation-------------------------*/
+  $("#ask-contact-form").validate({
+    rules: {
+      client_name: {
+        required:true
+      },
+      client_phone: {
+        required: true,
+         digits: true
+      }
+    },
+    messages: {
+      client_name:{
+        required: "Введите имя" 
+      },
+      client_phone: {
+        required: "Введите e-mail"
+      }
+    },
+    focusCleanup: true,
+    focusInvalid: false,
 
-
-
+  });
+/*------------same hight for blocks-----------*/
+   function setEqualHeight(columns){
+        var tallestColumn = 0;
+        columns.each(function(){
+          var currentHeight = $(this).height();
+          if (currentHeight > tallestColumn){ tallestColumn = currentHeight }
+        });
+        columns.height(tallestColumn);
+    }
+    
+    setEqualHeight($(".offer-item"))
+    
 
 
       });//jQuery end

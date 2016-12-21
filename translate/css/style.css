@@ -289,7 +289,7 @@ html, body {
 			}
 /*-------------------TRANSLATORS--------------------------------*/
 .translators {
-	margin: 30px 0;
+	margin: 30px 0 10px 0;
 	padding: 20px;
 }
 	.translators .translator {
@@ -326,7 +326,7 @@ html, body {
 /*-------------------FEEDBACKS--------------------------------*/
 
 .feedbacks {
-	margin-bottom:50px;
+	margin-bottom:10px;
 	padding: 20px 0 50px;
 }
 	.feedbacks h2 {
@@ -405,8 +405,127 @@ html, body {
 		.footer .btn:hover{
 			background-color: #0FF8FF;
 		}
+/*-----------------------form validation styles-------------------------------------*/
+#ask-contact-form {
+	position: relative;
+}
 
+#client_phone-error {
+	position: absolute;
+    color: red;
+    font-size: 15px;
+    right: 32%;
+    top: 30px;
+    font-weight: 400;
+}
+#client_name-error {
+	position: absolute;
+    color: red;
+    font-size: 15px;
+    left: 10%;
+    top: 30px;
+    font-weight: 400;
+}
 
+/*---------------------media queries---------------------*/
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+	.inner-wrap .row {
+		margin-bottom: 50px;
+	}
+	.my-header-center p {
+		font-size: 18px;
+	}
+	.my-header-center .js-typed-1 {
+		font-size: 40px;
+	}
+	.info-circle {
+		margin-bottom: 40px;
+	}
+	.document-list .documents  {
+		margin-top: 50px;
+   		padding-left: 55px;
+	}
+	.clients .container-fluid {
+		padding-left: 0;
+	}
+	a.navbar-brand.header-logo {
+		left: 0;
+	}
+	ul.nav.navbar-nav.navbar-right{
+		right: -135px;
+    	top: 65px;
+	}
+	.clients .col-sm-2 {
+		margin: 0 10px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	.offer .offer-item {
+		width: 80%;
+		margin: 0 auto 15px;
+		border-bottom: 1px solid #efefef;
+		padding-bottom: 25px;
+		height: 110px;
+	}
+		.offer .offer-item:last-child {
+			border-bottom: none;
+		}
+	.offer-item .offer-item-logo {
+		padding: 0;
+	}
+	.translators .translator {
+		margin-bottom: 0;
+		padding: 25px 0;
+		border-bottom: 1px solid #efefef;
+	}
+		.translators .translator:last-child {
+			border-bottom: none;
+		}
+		.mobile-menu {
+			margin-top: 22px;
+			background-color: #efefef;
+		}
+	.navbar-default .navbar-collapse {
+		margin-top: 30px;
+	}
+
+}
+@media screen and (max-width: 550px) {
+	.inner-wrap .row {
+		margin-bottom: 10px;
+	}
+	.my-header-center h2{
+		display: none;
+	}
+	.info-circle {
+		height: 125px;
+	}
+	.row.text-center .col-sm-4 {
+		margin-bottom: 25px;
+	}
+	.row.text-center h2 {
+		margin: 0;
+	}
+	.offer-head {
+		margin-top: -50px;
+	}
+	.document-list .documents {
+		width: 100%;
+	}
+	.my-navbar-head .header-logo span {
+		font-size: 37px;
+	}
+	#bs-example-navbar-collapse-1{
+		margin-top: 70px;
+	}
+}
 
 
 
